@@ -56,8 +56,7 @@ class WheelCurvedPicker extends React.Component {
 
 	static defaultProps = {
 		itemStyle : {color:"white", fontSize:26},
-    itemSpace: 20,
-    selectedLineColor: "black"
+    itemSpace: 20
 	}
 
 	componentWillReceiveProps (props) {
@@ -76,9 +75,8 @@ class WheelCurvedPicker extends React.Component {
 
 		var textSize = props.itemStyle.fontSize
     var textColor = props.itemStyle.color
-    var selectedLineColor = props.itemStyle.selectedLineColor
 
-		return {selectedIndex, items, textSize, textColor, selectedLineColor};
+		return {selectedIndex, items, textSize, textColor};
 	}
 
 	_onValueChange = (e) => {
@@ -94,7 +92,6 @@ class WheelCurvedPicker extends React.Component {
 				data={this.state.items}
 				textColor={this.state.textColor}
 				textSize={this.state.textSize}
-        selectedLineColor={this.state.selectedLineColor}
 				selectedIndex={parseInt(this.state.selectedIndex)} />;
 	}
 }

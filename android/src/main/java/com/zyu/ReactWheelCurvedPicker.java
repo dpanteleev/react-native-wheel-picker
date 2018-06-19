@@ -27,7 +27,6 @@ public class ReactWheelCurvedPicker extends WheelCurvedPicker {
 
     private final EventDispatcher mEventDispatcher;
     private List<Integer> mValueData;
-    private int selectedLineColor;
 
     public ReactWheelCurvedPicker(ReactContext reactContext) {
         super(reactContext);
@@ -79,11 +78,6 @@ public class ReactWheelCurvedPicker extends WheelCurvedPicker {
 
     public int getState() {
         return state;
-    }
-
-    public void setSelectedLineColor(int selectedLineColor) {
-      this.selectedLineColor = selectedLineColor;
-      invalidate();
     }
 }
 

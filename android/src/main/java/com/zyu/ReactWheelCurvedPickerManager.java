@@ -91,11 +91,4 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
     public String getName() {
         return REACT_CLASS;
     }
-
-    @ReactProp(name="selectedLineColor", customType = "Color")
-    public void setSelectedLineColor(ReactWheelCurvedPicker picker, Integer color){
-      if (picker != null) {
-        picker.setSelectedLineColor(color);
-      }
-    }
 }
